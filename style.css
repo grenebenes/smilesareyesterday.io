@@ -1,0 +1,3189 @@
+/*!
+Theme Name: Toocheke
+Theme URI: https://www.toocheke.com/
+Author: LeeToo
+Author URI: https://leetoo.net/
+Description: A mobile-friendly(responsive) WordPress theme for publishing a WebComics in the webtoon/vertical format.  It has been developed using Bootstrap 4, which makes it mobile and tablets friendly. To get the best out of the Toocheke theme, please make sure you download the Toocheke Companion plugin, https://wordpress.org/plugins/toocheke-companion/. This will enable you to post comics, and get the most out of what the theme has to offer. Check the demo at http://theme.toocheke.com/.
+Version: 1.0.244
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 6.7
+Requires PHP: 7.4
+Text Domain: toocheke
+Tags: entertainment, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, threaded-comments, translation-ready
+
+*/
+
+/*--------------------------------------------------------------
+# Body Styles 
+--------------------------------------------------------------*/
+
+html,
+body {
+	max-width: 100% !important;
+	overflow-x: hidden !important;
+}
+
+html {
+	line-height: 1.15;
+	scroll-behavior: smooth;
+	-webkit-text-size-adjust: 100%;
+	max-width: 100%;
+	margin: 0;
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	background-color: #f5f5f5;
+	margin: 0;
+	margin-bottom: 45px;
+	color: #000;
+	background-attachment: fixed !important;
+}
+
+body#tinymce {
+	background: #fff !important;
+}
+
+body,
+input,
+textarea,
+select,
+button,
+table {
+	font: 1em/1.75em Hind;
+	font-family: 'Hind', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, sans-serif;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+	text-size-adjust: 100%;
+}
+
+body#tinymce {
+	background: #fff !important;
+}
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a,
+a:visited {
+	color: #10ae98;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #F15A5A;
+}
+
+a:focus {
+	outline: thin dotted !important;
+}
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+body.single-comics {
+	margin-top: 0px;
+	/* Margin bottom by footer height */
+}
+
+img {
+	border-style: none;
+}
+
+/* Misc
+	 ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+	display: none;
+}
+
+/* Forms
+	 ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	/* 1 */
+	font-size: 100%;
+	/* 1 */
+	line-height: 1.15;
+	/* 1 */
+	margin: 0;
+	/* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+	/* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+	/* 1 */
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+
+legend {
+	box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+	overflow: auto;
+	padding: 0.5rem !important;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+	display: none;
+}
+
+/* Style up inputs */
+
+legend {
+	border-bottom: 1px solid #ddd;
+}
+
+::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: #ccc;
+	font-weight: normal !important;
+}
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #ccc;
+	font-weight: normal !important;
+}
+
+:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #ccc;
+	font-weight: normal !important;
+}
+
+:-moz-placeholder {
+	/* Firefox 18- */
+	color: #ccc;
+	font-weight: normal !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="url"],
+input[type="email"],
+input[type="search"],
+input[type="tel"],
+textarea,
+.form-control,
+.checkout-input,
+select.form-control {
+	margin: 0;
+	padding: 0 10px;
+	background: #fff;
+	border: 1px solid #DDDDDD;
+	font-family: 'Lato', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, sans-serif !important;
+	font-size: 12px;
+	font-weight: 400;
+	color: #404041;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-ms-transition: all .3s;
+	transition: all .3s;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+.form-control,
+.checkout-input,
+select.form-control {
+	height: 35px;
+	line-height: 35px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+textarea.form-control:focus,
+select.form-control:focus {
+	outline: 0;
+	background: #fff;
+	border: 1px solid #10ae98;
+	color: #000;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+textarea {
+	width: 100%;
+}
+
+input[type="number"] {
+	width: 45px;
+	padding: 0px 5px;
+}
+
+input#s.form-control.search-control {
+	margin-right: 10px !important;
+}
+
+input[type="checkbox"] {
+	margin-top: .3rem;
+	margin-right: .5rem;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	-webkit-appearance: button;
+	color: #fff;
+	background-color: #f15a5a;
+	border: 1px solid #f15a5a;
+	margin-bottom: .75rem;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+button:hover {
+	background-color: #f15a5a;
+	border: 1px solid #f15a5a;
+	opacity: 0.85;
+}
+
+.btn-success {
+	background-color: #10ae98;
+	border: 1px solid #10ae98;
+}
+
+.btn-success:hover {
+	background-color: #0f8d7c;
+	border-color: #0a6155;
+}
+
+.btn-danger {
+	background-color: #f15a5a;
+	border: 1px solid #f15a5a;
+}
+
+.btn-danger:hover {
+	background-color: #f15a5a;
+	border: 1px solid #f15a5a;
+	opacity: 0.85;
+}
+
+.btn-danger:focus {
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+#content {
+	overflow: hidden;
+}
+
+/* Do not show the outline on the skip link target. */
+
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Navbar 
+--------------------------------------------------------------*/
+
+
+.navbar-brand {
+	padding: 0;
+}
+
+/* remove navbar button stying */
+
+button.navbar-toggler {
+	background: none !important;
+	border: none !important;
+	background-color: none !important;
+	margin-bottom: 0;
+	/* remove the blue outline when active or focused */
+	/* basic styles for each icon bar */
+	/* styles for when .navbar is closed */
+}
+
+.navbar {
+	padding: 0 1rem;
+	min-height: 45px;
+	box-shadow: 0 5px 11px 0 rgba(50, 50, 50, .08);
+	z-index: 500;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+	outline: 0;
+}
+
+.navbar-toggler .icon-bar {
+	background-color: #10ae98;
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+	margin: 4px 0 4px 0;
+	transition: all 0.2s;
+	/* custom .navbar-light .icon-bar background */
+	/* .navbar open top .icon-bar rotated down 45° */
+	/* .navbar open middle .icon-bar invisible */
+	/* .navbar open bottom .icon-bar rotated up 45° */
+}
+
+.navbar-light .navbar-toggler .icon-bar {
+	background: #10ae98;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(1) {
+	transform: rotate(45deg);
+	transform-origin: 10% 10%;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(2) {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.navbar-toggler .icon-bar:nth-of-type(3) {
+	transform: rotate(-45deg);
+	transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .icon-bar {
+	/* .navbar closed top .icon-bar no rotation - straight */
+	/* .navbar open middle .icon-bar visible */
+	/* .navbar open bottom .icon-bar no rotation - straight */
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
+	transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
+	transform: rotate(0);
+}
+
+.navbar-light .navbar-nav .nav-link,
+a.dropdown-item {
+	color: #10ae98;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #F15A5A;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+	color: #F15A5A;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+	background-color: #ffffff;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+	color: #ffffff;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	background: #F15A5A;
+	color: #ffffff;
+}
+
+.navbar-light .navbar-nav>.active>a,
+.navbar-light .navbar-nav>.active>a:hover,
+.navbar-light .navbar-nav>.active>a:focus {
+	border-bottom: 3px solid #F15A5A;
+	background-color: transparent;
+}
+
+.navbar-nav>.menu-item {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	/*overflow: hidden;*/
+}
+
+.navbar-nav>.menu-item:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	bottom: 0px;
+	background: #F15A5A;
+	height: 3px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.menu-item:hover:before,
+.menu-item:focus:before,
+.menu-item:active:before {
+	left: 0;
+	right: 0;
+}
+
+/*--------------------------------------------------------------
+# Below Header
+--------------------------------------------------------------*/
+#below-header {
+	position: relative;
+	width: 100%;
+	text-align: center;
+
+}
+
+.below-header-padding-top {
+	padding-top: 30px;
+}
+
+#below-header.webtoon {
+	margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+	.below-header-padding-bottom {
+		padding-bottom: 15px;
+	}
+}
+
+#below-header img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*--------------------------------------------------------------
+# Main section 
+--------------------------------------------------------------*/
+
+main {
+	margin-top: 45px;
+	padding-bottom: 0px;
+	word-wrap: normal;
+	width: 100%;
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Jumbotron 
+--------------------------------------------------------------*/
+
+.jumbotron {
+	width: 100%;
+	background-color: #10ae98;
+	background-position: center top;
+	background-repeat: no-repeat;
+	color: #fff;
+	text-align: center;
+	background-size: contain;
+	border-radius: 0;
+	margin-top: 45px;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+.jumbotron-img {
+	display: block;
+	height: auto;
+	object-fit: contain;
+	width: 100%;
+	visibility: hidden;
+}
+
+.jumbotron .site-title {
+	display: block;
+	font-size: 4rem;
+	line-height: 4rem;
+	clear: both;
+	margin-bottom: .5rem;
+	font-weight: 600;
+}
+
+.jumbotron .site-description {
+	font-size: 1.25rem;
+	font-style: italic;
+	font-weight: 500;
+}
+
+.comic-info {
+	position: absolute;
+}
+
+@media (min-width: 992px) {
+	.jumbotron .site-title {
+		font-size: 5.5rem;
+	}
+}
+
+.jumbotron .author {
+	font-style: italic;
+	font-weight: 600;
+}
+
+.jumbotron .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1920px) {
+	.jumbotron {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.jumbotron .site-title {
+		font-size: 2.5rem;
+		line-height: 2rem;
+		margin-bottom: 0rem;
+	}
+
+	.jumbotron .site-description {
+		font-size: 0.875rem;
+		line-height: 0.875rem;
+		font-style: italic;
+		font-weight: 500;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.jumbotron .site-title {
+		font-size: 1.75rem;
+		line-height: 1.25rem;
+		margin-top: 1.25rem;
+	}
+
+	.comic-item .comic-title {
+		max-width: 240px;
+	}
+}
+
+/*--------------------------------------------------------------
+# Content Area
+--------------------------------------------------------------*/
+
+#comics-section {
+	height: 1px;
+}
+
+@media (min-width: 992px) {
+	.site-content {
+		margin-top: 15px;
+	}
+}
+
+#left-col {
+	background-color: #fff;
+	max-width: 100%;
+}
+
+.left-title {
+	font-weight: 600;
+}
+
+.left-title:after {
+	background-color: #10ae98;
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 4px auto 15px;
+}
+
+@media only screen and (min-width: 991px) {
+	#content {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1140px;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	#content {
+		max-width: 100%;
+	}
+
+	#main-content-row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#main-content-row .col-lg-4,
+	#main-content-row .col-lg-8 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.cat-links {
+	margin-right: 10px;
+}
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+#side-bar {
+	background-color: #10ae98;
+	color: #fff;
+	display: block;
+	clear: right;
+}
+
+#side-bar a {
+	color: #f8d94a;
+}
+
+#side-bar a:visited {
+	color: #fff;
+}
+
+#side-bar section {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	margin-bottom: 0;
+	padding: 1em 2em;
+	font-size: .875em;
+	letter-spacing: .05em;
+	line-height: 1.5em;
+}
+
+#side-bar section .widget-title {
+	text-align: left;
+	color: #FFF;
+}
+
+.about-avatar {
+	border: 0;
+	height: auto;
+	vertical-align: top;
+	max-width: 27.7%;
+	border-radius: 5%;
+	float: left;
+	margin: .5em 1em .5em 0;
+}
+
+#side-bar section ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0;
+}
+
+#side-bar .social-links li {
+	display: inline-block;
+	font-size: 1.5em;
+	margin: 0 5px 1em;
+	letter-spacing: 0;
+}
+
+#side-bar,
+#side-bar section .widget-title,
+.social-links ul li a,
+#side-bar section#twitter ul li a {
+	color: #FFFFFF;
+	fill: currentColor;
+}
+
+#side-bar svg {
+	fill: currentColor;
+	height: 1.75rem;
+	width: 1.75rem;
+}
+
+.social-links ul li a span.fab,
+.social-links ul li a span.fas {
+	display: inline-block;
+	text-align: center;
+	background-color: #F15A5A;
+	border-radius: 5%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+}
+
+.social-links ul li a:hover {
+	opacity: .8;
+}
+
+.social-links ul li a:hover {
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Comic Archive
+--------------------------------------------------------------*/
+
+#left-content {
+	position: relative;
+	padding: 30px;
+	background: #fff;
+}
+
+@media only screen and (min-width: 992px) {
+
+	#left-content,
+	#side-bar {
+		margin-bottom: 30px;
+	}
+}
+
+#comic-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+#comic-list>li {
+	position: relative;
+	border-bottom: 1px solid #f5f5f5;
+	height: 70px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+#comic-list>li:first-child {
+	border-top: 1px solid #f5f5f5;
+}
+
+#comic-list>li:hover {
+	background: #f5f5f5;
+}
+
+#comic-list>li>a {
+	display: block;
+	height: 70px;
+	white-space: nowrap;
+	cursor: pointer;
+	color: #000;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+#comic-list>li>a:focus,
+#comic-list>li>a:focus .comic-list-item-details {
+	color: #F15A5A !important;
+}
+
+#comic-list>li>a:focus img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+#comic-list>li:hover a,
+#comic-list>li:hover p {
+	color: #10ae98;
+}
+
+#comic-list>li:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+#comic-list>li>a:hover {
+	color: #10ae98;
+}
+
+.comic-item {
+	vertical-align: center;
+	height: 70px;
+	padding: 0;
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	text-align: left;
+}
+
+.comic-item .thmb {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	height: 70px;
+	width: 70px;
+	overflow: hidden;
+	max-height: 70px;
+}
+
+.comic-item .rank {
+	position: absolute;
+	top: 11px;
+	left: 9px;
+	z-index: 10;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.toocheke_latest_10_comics_widget .rank {
+	display: none;
+}
+
+#comic-list .thmb img {
+	max-height: 70px;
+	max-width: none !important;
+	width: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.comic-item .comic-info {
+	height: 70px;
+	padding-left: 10px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.comic-title-wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.comic-item .comic-title {
+	height: 21px;
+	font-size: 17px;
+	overflow: hidden;
+	min-width: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+}
+
+.comic-item .comic-list-item-details {
+	color: #848484;
+	margin-top: 3px;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+#side-bar #comic-list {
+	border: 1px solid #f5f5f5;
+}
+
+#side-bar .comic-item .comic-title,
+#side-bar .comic-item .comic-list-item-details {
+	color: #fff;
+}
+
+#side-bar .comic-item .comic-title {
+	max-width: 200px;
+}
+
+/*
+#side-bar .comic-post-date {
+	display: none;
+}
+*/
+
+#side-bar #comic-list>li:hover a,
+#side-bar #comic-list>li:hover p {
+	color: #10ae98;
+}
+
+/* Comic Pagination */
+
+.page-numbers {
+	display: inline-block;
+	text-align: center;
+	width: 1.75rem;
+	height: 1.75rem;
+	margin-bottom: .5rem;
+	margin-right: .5rem;
+}
+
+.page-numbers {
+	color: #fff;
+	text-decoration: none;
+	background-color: #10ae98;
+	border: 1px solid #000000;
+}
+
+.page-numbers:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #f15a5a;
+	border-color: #000000;
+}
+
+.page-numbers.current {
+	z-index: 1;
+	color: #000;
+	background-color: #f8d94a;
+	border-color: #000000;
+}
+
+.page-numbers:focus {
+	color: #fff;
+	background-color: #000;
+}
+
+
+/*--------------------------------------------------------------
+# Above Footer 
+--------------------------------------------------------------*/
+#above-footer {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+#above-footer.webtoon {
+	margin-top: 15px;
+}
+
+#above-footer img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*--------------------------------------------------------------
+# Footer 
+--------------------------------------------------------------*/
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 45px;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	color: #c5c5c5;
+	font-size: 0.75rem;
+	line-height: 0.75rem;
+}
+
+.copyright {
+	position: relative;
+	padding-top: 16px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #c5c5c5;
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Comic Page
+--------------------------------------------------------------*/
+
+#comic-nav-top,
+#comic-nav-bottom {
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 45px;
+	background-color: #fff;
+	z-index: 1000;
+	color: #343a40;
+}
+
+#comic-nav-top img,
+#comic-nav-bottom img {
+	max-height: 35px !important;
+	width: auto;
+}
+
+#comic-nav-top {
+	top: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#comic-nav-bottom {
+	bottom: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#comic {
+	background-color: #fff;
+	text-align: center;
+	padding: 15px;
+}
+
+#comic img {
+	clear: both;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto !important;
+	display: block;
+}
+
+#left-content img {
+	max-width: 100%;
+	height: auto;
+}
+
+#scroll-container {
+	text-align: left;
+}
+
+#home-scroll-container,
+#language-switch-container {
+	text-align: right;
+}
+
+#home-scroll-container,
+#language-switch-container {
+	position: fixed;
+	z-index: 2000;
+	right: 0;
+}
+
+#home-scroll-container {
+	bottom: 45px;
+	display: none;
+}
+
+#language-switch-container {
+	top: 45px;
+}
+
+#home-scroll-container .ScrollTop,
+#language-switch-container .SwitchLang {
+	display: inline-block;
+	color: white;
+	background: #f15a5a;
+	overflow: hidden;
+	line-height: 50px;
+	text-align: center;
+	border-radius: .75rem;
+}
+
+#home-scroll-container .ScrollTop {
+	margin-right: 10px;
+	max-width: 50px;
+	width: 50px;
+	height: 50px;
+}
+
+#language-switch-container .SwitchLang {
+	margin-top: 10px;
+	margin-right: 10px;
+	max-width: 80px;
+	width: 80px;
+	height: 50px;
+}
+
+#home-scroll-container .ScrollTop:hover,
+#language-switch-container .SwitchLang:hover {
+	background: #10ae98;
+	color: white;
+}
+
+.ScrollTop,
+.SwitchLang {
+	transition: all .5s;
+}
+
+.alt-lang {
+	display: none;
+}
+
+.fa-inverse {
+	color: #000;
+}
+
+.comic-total-comments,
+.comic-total-views,
+.comic-total-likes,
+.webtoon-comic-bookmark {
+	float: right;
+	margin-right: 10px;
+}
+
+#comic-bookmark {
+	font-size: initial;
+}
+
+#comic-analytics {
+	margin-top: 15px;
+}
+
+#comic-analytics i {
+	margin-right: 5px;
+}
+
+#comic-analytics a {
+	margin-right: 0px;
+}
+
+#comic-analytics .toocheke-likes-button {
+	padding: 0.375em 0px;
+}
+
+.comic-navigation {
+	float: right;
+	color: #343a40;
+}
+
+.comic-navigation a {
+	color: #343a40;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+.comic-navigation i {
+	display: inline-block;
+	text-align: center;
+	line-height: 35px;
+	margin: 5px 5px;
+}
+
+#comic-nav-share i {
+	margin: 5px 0.15rem;
+}
+
+#comic-nav-share .fa-copy {
+	margin-right: 0.5rem;
+}
+
+.comic-navigation a:hover {
+	color: #10ae98;
+}
+
+.home.comic-navigation {
+	float: left;
+}
+
+#comic-nav-name-wrapper {
+	height: 50px;
+	line-height: 50px;
+	display: flex;
+}
+
+#comic-nav-name {
+	font-weight: 500;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#comic-nav-share {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+#comic [id*="toocheke_social_media"] ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0;
+}
+
+#comic [id*="toocheke_social_media"] li {
+	display: inline-block;
+	font-size: 1.5em;
+	margin: 0 5px 1em;
+	letter-spacing: 0;
+}
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.page-template-blog .post {
+	display: block !important;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+
+#comments {
+	margin-top: 30px;
+}
+
+.comments-title {
+	margin-bottom: 5px !important;
+}
+
+.comments-title,
+.comment-reply-title {
+	font-size: 22px;
+}
+
+#comments .mb-md-5,
+#comments .my-md-5 {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	margin-top: 0 !important;
+	margin-bottom: 30px !important;
+}
+
+#comments .mt-3,
+#comments .my-3 {
+	margin-top: 15px !important;
+}
+
+.comments-area {
+	text-align: left;
+}
+
+#comments h4 {
+	font-size: 18px
+}
+
+.comment-content,
+#commentform {
+	line-height: 1.25em;
+}
+
+#comments p,
+#commentform label,
+#commentForm p {
+	font-size: 14px !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+.form-control,
+.checkout-input,
+select.form-control {
+	height: 24px;
+	line-height: 24px;
+}
+
+#comments .medias,
+#respond {
+	padding: 0 15px;
+	margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.comment-metadata {
+		display: none !important;
+	}
+}
+
+.comment .comment {
+	margin-bottom: 7px;
+	margin-right: 7px;
+}
+
+.comment-reply-title {
+	margin-top: 15px;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+#comments .avatar {
+	max-height: 35px;
+	width: auto;
+	margin-right: 5px !important;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#comments .card .card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	border-bottom: none;
+	padding: 7px;
+}
+
+#comments .card {
+	border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.002);
+	font-size: 14px;
+}
+
+.comment-content.card-text {
+	padding: 10px;
+}
+
+.chip {
+	display: inline-block;
+	border-radius: 16px;
+	font-size: 13px;
+	background-color: #10ae98;
+	border: none;
+	color: #fff;
+	height: initial;
+	min-height: 25px;
+	line-height: 25px;
+	margin-bottom: 0rem;
+	margin-right: .5rem;
+	padding: 0px 10px;
+	box-shadow: 0 1px 1px rgba(128, 128, 128, 0.18);
+	font-weight: 600;
+}
+
+.chip a {
+	color: #fff;
+}
+
+.chip a:hover {
+	text-decoration: none;
+}
+
+#comments .children .media .card-block {
+	background: rgba(0, 0, 0, 0.02);
+	padding: .75rem;
+}
+
+#comments .media p {
+	margin-bottom: .1rem;
+}
+
+.hoverable {
+	transition: box-shadow .5s;
+}
+
+.hoverable:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.comment-respond {
+	background-color: #f5f5f5;
+	z-index: 20;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/* Owl Carousel */
+
+.owl-carousel {
+	clear: both;
+	margin: 10px 0;
+}
+
+.current-comic {
+	border: 3px solid #10ae98;
+}
+
+span.mask {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: #999999;
+	opacity: .4;
+	filter: alpha(opacity=40);
+}
+
+span.mask:hover {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.current-comic span.mask {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+/* Sidebar calendar widget */
+
+#wp-calendar {
+	width: 100% !important;
+	font-size: 11px !important;
+	background-color: transparent;
+}
+
+#wp-calendar thead th {
+	background: transparent !important;
+	border: 1px solid #ffffff;
+	font-size: 11px !important;
+}
+
+#wp-calendar tbody td {
+	color: #ffffff;
+	text-align: center !important;
+	border: 1px solid #ffffff;
+	line-height: 2.5em !important;
+	transition: background 0.15s ease !important;
+	-webkit-transition: background 0.15s ease !important;
+	-o-transition: background 0.15s ease !important;
+	-moz-transition: background 0.15s ease !important;
+}
+
+#wp-calendar tbody td:hover {
+	background: rgba(0, 0, 0, .15) !important;
+	color: #ffffff;
+}
+
+#wp-calendar tbody td a {
+	display: block !important;
+	text-decoration: none !important;
+	background: #ffffff !important;
+	color: #000000 !important;
+}
+
+#wp-calendar tbody td:hover a {
+	background: #f15a5a !important;
+	color: #fff !important;
+}
+
+#wp-calendar tfoot td {
+	padding-top: 1px !important;
+	padding: 4px !important;
+}
+
+#wp-calendar caption {
+	cursor: pointer !important;
+	font-size: 13px !important;
+	text-transform: uppercase !important;
+	margin: 0 !important;
+	padding: 12px !important;
+	outline: 0 none !important;
+	background: #f15a5a !important;
+	color: #fff !important;
+}
+
+#wp-calendar caption:hover {
+	opacity: 0.8;
+}
+
+#wp-calendar tbody a {
+	display: block !important;
+	text-decoration: underline !important;
+}
+
+#wp-calendar th {
+	text-align: center !important;
+	padding: 7px 0 !important;
+	color: #ffffff !important;
+	font-weight: 700 !important;
+}
+
+#wp-calendar tfoot a {
+	color: #f8d94a;
+}
+
+/* Body Calendar */
+
+#archive-page-calendar-wrapper #wp-calendar thead th {
+	border: 1px solid #000;
+}
+
+#archive-page-calendar-wrapper #wp-calendar tbody td {
+	color: #000;
+	border: 1px solid #000;
+}
+
+#archive-page-calendar-wrapper #wp-calendar tbody td:hover {
+	background: rgba(0, 0, 0, .15) !important;
+	color: #000;
+}
+
+#archive-page-calendar-wrapper #wp-calendar tbody td a {
+	background-color: #10ae98 !important;
+	color: #fff !important;
+}
+
+#archive-page-calendar-wrapper #wp-calendar tbody td:hover a {
+	opacity: 0.8;
+}
+
+#archive-page-calendar-wrapper #wp-calendar th {
+	color: #000 !important;
+}
+
+#archive-page-calendar-wrapper #wp-calendar tfoot a {
+	color: #10ae98;
+}
+
+/* Tag Cloud */
+
+#side-bar .tagcloud {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#side-bar .tagcloud a {
+	display: inline-block;
+	margin: 0.125rem;
+	padding: 0.4375rem;
+	background: transparent;
+	border: 1px solid #f8d94a;
+	transition: all 0.1s ease-in-out;
+	text-decoration: none;
+	color: #f8d94a;
+}
+
+#side-bar .tagcloud a:hover,
+#side-bar .tagcloud a:focus {
+	background: #f15a5a;
+	border: 1px solid #f15a5a;
+	color: #ffffff !important;
+	transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+## Chapters
+--------------------------------------------------------------*/
+
+.chapter-thumbnail {
+	text-align: center;
+}
+
+.chapter-thumbnail img {
+	max-width: 100%;
+	height: auto;
+}
+
+.chapter-thumbnail a:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.chapter-thumbnail a:focus img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.more-chapters-wrapper {
+	text-align: right;
+	margin-top: 15px;
+}
+
+.btn-group-xs>.btn,
+.btn-xs {
+	padding: 1px 5px !important;
+	font-size: 12px !important;
+	line-height: 1.5 !important;
+	border-radius: 3px !important;
+}
+
+.infinite-scroll #blog-pagination {
+	display: none !important;
+}
+
+@media only screen and (min-width: 991px) {
+	.infinite-wrap {
+		width: 100%;
+		padding-right: 40px;
+		padding-left: 40px;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1140px;
+	}
+}
+
+/*--------------------------------------------------------------
+# Home Single Comic Layout
+--------------------------------------------------------------*/
+
+.single-comic-bookmark {
+	margin-left: 5px;
+}
+
+.single-comic-wrapper {
+	margin-top: 15px;
+	text-align: center;
+}
+
+#latest-comic {
+	margin-bottom: 30px;
+}
+
+#traditional-single-comic.add-margin {
+	margin-top: 30px;
+}
+
+#latest-comic,
+#collections-owl-carousel-wrapper {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.single-comic-wrapper {
+		margin-top: 0px;
+	}
+}
+
+.single-comic-navigation {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+
+.single-comic-navigation a {
+	margin: 0 10px;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+.single-comic-navigation img {
+	max-height: 35px;
+	width: auto;
+}
+
+@media (max-width: 767px) {
+	.single-comic-navigation a {
+		font-size: 23px;
+		margin: 0 8px;
+	}
+}
+
+@media (max-width: 555px) {
+	.single-comic-navigation a {
+		font-size: 20px;
+		margin: 0 6px;
+	}
+}
+
+@media (max-width: 400px) {
+	.single-comic-navigation a {
+		font-size: 18px;
+		margin: 0 4px;
+	}
+}
+
+.collection-cover:hover {
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+}
+
+/*--------------------------------------------------------------
+# Swipe Icon
+--------------------------------------------------------------*/
+
+#swipe-instructions {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#swipe-wrapper {
+	height: 100%;
+	font-size: 50px;
+	display: none;
+}
+
+.stage {
+	width: 100%;
+	padding: 15px 0;
+	text-align: center;
+}
+
+*,
+*:after,
+*:before {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.swipe {
+	display: inline-block;
+	color: #10ae98;
+	-moz-animation-name: swipe;
+	-webkit-animation-name: swipe;
+	animation-name: swipe;
+	-moz-animation-duration: 2700ms;
+	-webkit-animation-duration: 2700ms;
+	animation-duration: 2700ms;
+	-moz-animation-delay: 250ms;
+	-webkit-animation-delay: 250ms;
+	animation-delay: 250ms;
+	-moz-animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.swipe .fa-long-arrow-alt-left,
+.swipe .fa-long-arrow-alt-right {
+	font-size: 0.65em;
+	color: #595959;
+}
+
+.swipe .fa-long-arrow-alt-left {
+	-moz-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(1.25em);
+	-ms-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(1.25em);
+	-webkit-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(1.25em);
+	transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(1.25em);
+}
+
+.swipe .fa-long-arrow-alt-right {
+	-moz-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(-0.95em);
+	-ms-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(-0.95em);
+	-webkit-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(-0.95em);
+	transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(-0.95em);
+}
+
+.swipe .fa-hand-o-up {
+	-moz-transform: scaleY(1.2);
+	-ms-transform: scaleY(1.2);
+	-webkit-transform: scaleY(1.2);
+	transform: scaleY(1.2);
+	-moz-animation-name: swipe-rotate;
+	-webkit-animation-name: swipe-rotate;
+	animation-name: swipe-rotate;
+	-moz-animation-duration: 2700ms;
+	-webkit-animation-duration: 2700ms;
+	animation-duration: 2700ms;
+	-moz-animation-delay: 250ms;
+	-webkit-animation-delay: 250ms;
+	animation-delay: 250ms;
+	-moz-animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-moz-keyframes swipe {
+	0% {
+		-moz-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	10% {
+		-moz-transform: translateX(-0.1em);
+		transform: translateX(-0.1em);
+	}
+
+	20% {
+		-moz-transform: translateX(0.1em);
+		transform: translateX(0.1em);
+	}
+
+	30% {
+		-moz-transform: translateX(-0.1em);
+		transform: translateX(-0.1em);
+	}
+
+	40% {
+		-moz-transform: translateX(0.1em);
+		transform: translateX(0.1em);
+	}
+
+	50% {
+		-moz-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-moz-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes swipe {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	10% {
+		-webkit-transform: translateX(-0.1em);
+		transform: translateX(-0.1em);
+	}
+
+	20% {
+		-webkit-transform: translateX(0.1em);
+		transform: translateX(0.1em);
+	}
+
+	30% {
+		-webkit-transform: translateX(-0.1em);
+		transform: translateX(-0.1em);
+	}
+
+	40% {
+		-webkit-transform: translateX(0.1em);
+		transform: translateX(0.1em);
+	}
+
+	50% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@keyframes swipe {
+	0% {
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	10% {
+		-moz-transform: translateX(-0.1em);
+		-ms-transform: translateX(-0.1em);
+		-webkit-transform: translateX(-0.1em);
+		transform: translateX(-0.1em);
+	}
+
+	20% {
+		-moz-transform: translateX(0.1em);
+		-ms-transform: translateX(0.1em);
+		-webkit-transform: translateX(0.1em);
+		transform: translateX(0.1em);
+	}
+
+	30% {
+		-moz-transform: translateX(-0.1em);
+		-ms-transform: translateX(-0.1em);
+		-webkit-transform: translateX(-0.1em);
+		transform: translateX(-0.1em);
+	}
+
+	40% {
+		-moz-transform: translateX(0.1em);
+		-ms-transform: translateX(0.1em);
+		-webkit-transform: translateX(0.1em);
+		transform: translateX(0.1em);
+	}
+
+	50% {
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@-moz-keyframes swipe-rotate {
+	0% {
+		-moz-transform: scaleY(1.2) skew(0);
+		transform: scaleY(1.2) skew(0);
+	}
+
+	10% {
+		-moz-transform: scaleY(1.2) skew(5deg);
+		transform: scaleY(1.2) skew(5deg);
+	}
+
+	20% {
+		-moz-transform: scaleY(1.2) skew(-5deg);
+		transform: scaleY(1.2) skew(-5deg);
+	}
+
+	30% {
+		-moz-transform: scaleY(1.2) skew(5deg);
+		transform: scaleY(1.2) skew(5deg);
+	}
+
+	40% {
+		-moz-transform: scaleY(1.2) skew(-5deg);
+		transform: scaleY(1.2) skew(-5deg);
+	}
+
+	50% {
+		-moz-transform: scaleY(1.2) skew(0);
+		transform: scaleY(1.2) skew(0);
+	}
+
+	100% {
+		-moz-transform: scaleY(1.2) skew(0);
+		transform: scaleY(1.2) skew(0);
+	}
+}
+
+@-webkit-keyframes swipe-rotate {
+	0% {
+		-webkit-transform: scaleY(1.2) skew(0);
+		transform: scaleY(1.2) skew(0);
+	}
+
+	10% {
+		-webkit-transform: scaleY(1.2) skew(5deg);
+		transform: scaleY(1.2) skew(5deg);
+	}
+
+	20% {
+		-webkit-transform: scaleY(1.2) skew(-5deg);
+		transform: scaleY(1.2) skew(-5deg);
+	}
+
+	30% {
+		-webkit-transform: scaleY(1.2) skew(5deg);
+		transform: scaleY(1.2) skew(5deg);
+	}
+
+	40% {
+		-webkit-transform: scaleY(1.2) skew(-5deg);
+		transform: scaleY(1.2) skew(-5deg);
+	}
+
+	50% {
+		-webkit-transform: scaleY(1.2) skew(0);
+		transform: scaleY(1.2) skew(0);
+	}
+
+	100% {
+		-webkit-transform: scaleY(1.2) skew(0);
+		transform: scaleY(1.2) skew(0);
+	}
+}
+
+@keyframes swipe-rotate {
+	0% {
+		-moz-transform: scaleY(1.2) skew(0);
+		-ms-transform: scaleY(1.2) skew(0);
+		-webkit-transform: scaleY(1.2) skew(0);
+		transform: scaleY(1.2) skew(0);
+	}
+
+	10% {
+		-moz-transform: scaleY(1.2) skew(5deg);
+		-ms-transform: scaleY(1.2) skew(5deg);
+		-webkit-transform: scaleY(1.2) skew(5deg);
+		transform: scaleY(1.2) skew(5deg);
+	}
+
+	20% {
+		-moz-transform: scaleY(1.2) skew(-5deg);
+		-ms-transform: scaleY(1.2) skew(-5deg);
+		-webkit-transform: scaleY(1.2) skew(-5deg);
+		transform: scaleY(1.2) skew(-5deg);
+	}
+
+	30% {
+		-moz-transform: scaleY(1.2) skew(5deg);
+		-ms-transform: scaleY(1.2) skew(5deg);
+		-webkit-transform: scaleY(1.2) skew(5deg);
+		transform: scaleY(1.2) skew(5deg);
+	}
+
+	40% {
+		-moz-transform: scaleY(1.2) skew(-5deg);
+		-ms-transform: scaleY(1.2) skew(-5deg);
+		-webkit-transform: scaleY(1.2) skew(-5deg);
+		transform: scaleY(1.2) skew(-5deg);
+	}
+
+	50% {
+		-moz-transform: scaleY(1.2) skew(0);
+		-ms-transform: scaleY(1.2) skew(0);
+		-webkit-transform: scaleY(1.2) skew(0);
+		transform: scaleY(1.2) skew(0);
+	}
+
+	100% {
+		-moz-transform: scaleY(1.2) skew(0);
+		-ms-transform: scaleY(1.2) skew(0);
+		-webkit-transform: scaleY(1.2) skew(0);
+		transform: scaleY(1.2) skew(0);
+	}
+}
+
+/* Comic Layout Options for Desktop and Mobile Users */
+
+#unspliced-comic {
+	display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+	#two-comic-options #spliced-comic {
+		display: none;
+	}
+
+	#two-comic-options #unspliced-comic {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	#two-comic-options #spliced-comic {
+		display: block;
+	}
+
+	#two-comic-options #unspliced-comic {
+		display: none;
+	}
+}
+
+.blog-wrapper {
+	text-align: left;
+}
+
+.page main {
+	padding-bottom: 15px;
+}
+
+.jumbotron-top,
+.header-below-jumbotron {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.header-below-jumbotron+main {
+	margin-top: 0px;
+}
+
+.home .header-below-jumbotron+main #content,
+.single-comic .header-below-jumbotron+main #content {
+	margin-top: 0px !important;
+}
+
+.page .header-below-jumbotron+main #content {
+	margin-top: 30px !important;
+}
+
+.home .header-fixed+main #content,
+.single-comic .header-fixed+main #content,
+.page .header-fixed+main #content {
+	padding-top: 30px;
+}
+
+@media only screen and (min-width: 991px) {
+
+	.header-below-jumbotron+main,
+	.hero-visible+.jumbotron-header+main {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	main {
+		padding-top: 10px;
+	}
+
+	.jumbotron,
+	.single-comic-navigation {
+		margin-bottom: 0px;
+	}
+
+	.jumbotron-visible+main {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+
+	#header-comic+main {
+		padding-top: 0px;
+	}
+
+	.home .header-below-jumbotron+main,
+	.single-comic .header-below-jumbotron+main,
+	.page .header-below-jumbotron+main {
+		padding-top: 0px;
+	}
+
+	.page .header-below-jumbotron+main #content {
+		margin-top: 0px !important;
+	}
+}
+
+#comic-social,
+#comic-support {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#comic-social>ul,
+#comic-support>ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0;
+}
+
+#comic-social li,
+#comic-support li {
+	display: inline-block;
+	font-size: 1.5em;
+	margin: 0 5px;
+	letter-spacing: 0;
+}
+
+#comic-social li,
+#comic-support li {
+	font-size: 1.5em;
+	letter-spacing: 0;
+}
+
+#comic-support svg,
+#comic-social svg {
+	height: 1.5em;
+	width: 1.5em;
+}
+
+#comic-support svg,
+#comic-support path,
+#comic-social svg,
+#comic-social path {
+	fill: currentColor;
+}
+
+.card {
+	font-weight: 400;
+	border: 0;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	background-color: transparent;
+}
+
+#character-wrapper.row>.col-md-4>.card {
+	margin-bottom: 30px;
+}
+
+/*--------------------------------------------------------------
+# Comic Archive
+--------------------------------------------------------------*/
+
+#comic-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 15px;
+	align-items: stretch;
+}
+
+#comic-grid img {
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+	max-width: 100%;
+}
+
+#comic-grid img:hover {
+	opacity: 0.7;
+}
+
+.comic-thumbnail-wrapper {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Comic Image Nav
+--------------------------------------------------------------*/
+
+.comic-image-nav {
+	max-height: 120px;
+	display: inline !important;
+}
+
+.comic-image-nav:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+/*--------------------------------------------------------------
+# Series Styles
+--------------------------------------------------------------*/
+
+#series-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	grid-gap: 15px;
+	align-items: stretch;
+	margin-bottom: 30px;
+}
+
+.series-thumbnail-wrapper {
+	display: inline-block;
+	position: relative;
+}
+
+.series-thumbnail-wrapper img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.series-rollover {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #10ae98;
+	color: #fff;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+}
+
+.series-thumbnail-wrapper:hover .series-rollover {
+	height: 100%;
+}
+
+.series-link,
+.series-link:hover {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	height: 90%;
+	color: #fff;
+	font-size: 14px;
+	line-height: 15px;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: left;
+	text-decoration: none;
+}
+
+.series-link:focus {
+	outline: none !important;
+}
+
+.series-link h3 {
+	font-size: 18px;
+	line-height: 18px;
+	padding-top: 5px;
+}
+
+.series-link .description {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.above-comic-widget {
+	margin-bottom: 15px;
+}
+
+.below-comic-widget {
+	margin-top: 15px;
+}
+
+.wp-block-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+#comics-carousel img {
+	max-width: 100% !important;
+	width: 100% !important;
+}
+
+#comics-carousel .owl-dots {
+	display: none;
+}
+
+.analytics-wrapper {
+	font-weight: 500;
+	margin-right: 15px;
+}
+
+.likes-wrapper {
+	margin-right: 5px;
+}
+
+.modal-content {
+	color: #000 !important;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+
+#infinite-scroll .comic-title {
+	text-align: left;
+	font-weight: 500;
+	margin-top: 15px;
+	font-size: 1.75em;
+}
+
+#infinite-scroll #comic-social,
+#infinite-scroll #comic-support {
+	text-align: left;
+}
+
+#infinite-scroll #comic-social a,
+#infinite-scroll #comic-support a {
+	margin-right: 5px;
+}
+
+#infinite-scroll #comic-analytics {
+	margin-top: 0px;
+}
+
+.single-comic-total-comments a {
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Loader
+--------------------------------------------------------------*/
+
+#loader-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 0px;
+}
+
+.loader {
+	border: 3px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 3px solid #555;
+	width: 25px;
+	height: 25px;
+	-webkit-animation: spin 1.5s linear infinite;
+	/* Safari */
+	animation: spin 1.5s linear infinite;
+}
+
+/* Safari */
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*-----------------------------------------------------------------------*/
+
+/** END of loader */
+
+/*-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+
+/** Single Page Styling*/
+
+/*-----------------------------------------------------------------------*/
+body.page #left-content {
+	padding: 0px;
+}
+
+article.page,
+.page article.post,
+.page-template-comic-collections #left-content,
+.page-template-top-ten-comics #left-content,
+.page-template-series-genres #left-content,
+.page-template-comic-characters #left-content,
+.page-template-comic-chapters #left-content {
+	padding: 30px !important;
+}
+
+.page-hero {
+	min-height: 250px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+
+
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-hero,
+.inside-page-hero {
+	position: relative;
+}
+
+/*--------------------------------------------------------------
+## No Sidebar
+--------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+	.nosidebar .col-lg-8 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+.nosidebar .col-lg-4,
+.nosidebar #sidebar {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+## Chapters navigation
+--------------------------------------------------------------*/
+#chapters-drodpown {
+	padding: 0px 5px;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+#chapter-navigation {
+	padding-top: 15px;
+	text-align: center;
+}
+
+.chapters-nav-label {
+
+	font-weight: bold;
+	display: inline-block;
+	padding: 0px;
+	margin: 0;
+}
+
+.single-comic-navigation .chapters-nav-label {
+	font-size: 1.33333em;
+	line-height: 35px;
+}
+
+.chapter-inline-nav,
+.chapter-footer-dropdown {
+	display: inline-block;
+}
+
+.chapter-inline-dropdown {
+	margin-bottom: 25px;
+}
+
+.chapter-footer-nav {
+	line-height: 35px;
+	overflow: hidden;
+	position: absolute;
+	max-height: 35px;
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.chapter-footer-nav i {
+	margin: 0px 5px;
+}
+
+@media only screen and (max-width: 575px) {
+
+	.chapter-footer-nav,
+	.chapter-footer-dropdown {
+		display: none;
+	}
+
+	.chapter-inline-nav {
+		line-height: 35px;
+	}
+
+	#footer-series-link {
+		display: inline-block;
+		max-width: 50px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		line-height: 100%;
+	}
+}
+
+/*--------------------------------------------------------------
+## Comic archive segmented by Chapters
+--------------------------------------------------------------*/
+.comic-archive-date {
+	width: 140px;
+	display: inline-block;
+}
+
+.comic-archive-title {
+	margin-left: 10px;
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+# WooCommerce
+--------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+
+	.woocommerce .col2-set .col-1,
+	.woocommerce-page .col2-set .col-1,
+	.woocommerce .col2-set .col-2,
+	.woocommerce-page .col2-set .col-2 {
+		max-width: 48% !important;
+	}
+}
+
+/*--------------------------------------------------------------
+## Transcript
+--------------------------------------------------------------*/
+#transcript-wrapper {
+	margin: 15px auto;
+	max-width: 1200px;
+	text-align: left;
+	font-family: 'Courier New', monospace;
+}
+
+#transcript {
+	line-height: 18px;
+	padding: 15px;
+	padding-top: 0px;
+}
+
+#transcript-wrapper .panel-heading {
+	padding: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#transcript-wrapper .panel-heading h3 {
+	padding: 0px;
+	margin: 0px;
+}
+
+#transcript-wrapper .panel-heading h3 a {
+	outline: none !important;
+	text-decoration: none !important;
+	font-weight: bold;
+}
+
+#transcript-wrapper .panel {
+	border: 1px solid #000;
+}
+
+#transcript hr,
+.toocheke-hr {
+	border-top: 1px solid #000;
+}
+
+#transcript hr {
+	margin-top: 0px;
+}
+
+.panel-icon {
+	float: right;
+}
+
+#transcript-wrapper .panel-heading a:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f106";
+	float: right;
+	transition: all 0.5s;
+}
+
+#transcript-wrapper .panel-heading.active a:before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/*--------------------------------------------------------------
+## Comic Archive Menu
+--------------------------------------------------------------*/
+
+
+#archive-menu {
+	margin-bottom: 15px;
+	padding-left: 0;
+	list-style: none;
+}
+
+#archive-menu li {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	overflow: hidden;
+}
+
+#archive-menu li::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	bottom: 0px;
+	background: #10ae98;
+	height: 3px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+#archive-menu li:hover::before,
+#archive-menu li:focus::before,
+#archive-menu li:active::before {
+	left: 0;
+	right: 0;
+}
+
+#archive-menu li a {
+	padding-right: .5rem;
+	padding-left: .5rem;
+	display: block;
+	color: #10ae98;
+	text-decoration: none;
+}
+
+#archive-menu li a:hover {
+	color: #F15A5A;
+}
+
+#archive-menu li:hover::before {
+	background: #F15A5A;
+}
+
+.grid-container {
+	display: grid;
+	grid-gap: 15px;
+	margin-bottom: 15px;
+}
+
+.grid-four-cols {
+	grid-template-columns: auto auto auto auto;
+}
+
+.grid-three-cols {
+	grid-template-columns: auto auto auto;
+}
+
+.grid-two-cols {
+	grid-template-columns: auto auto;
+}
+
+@media only screen and (max-width: 1023px) {
+	.grid-container {
+		grid-template-columns: auto auto;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-container {
+		grid-template-columns: auto;
+	}
+}
+
+#copy-tooltip {
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	font-weight: bold;
+	padding: 0px 10px;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/** END Single Page Styling*/
+
+/*-----------------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Guttenberg Support
+--------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+
+/** END of Guttenberg Support */
+
+/*-----------------------------------------------------------------------*/

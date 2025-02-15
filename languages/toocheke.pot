@@ -1,0 +1,1085 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-07 16:09-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:25
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:34
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:50
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: archive-comic.php:51
+msgid "Older comics"
+msgstr ""
+
+#: archive-comic.php:52
+msgid "Newer comics"
+msgstr ""
+
+#: archive-comic.php:53
+msgid "Posts navigation"
+msgstr ""
+
+#: comments.php:45
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:52
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:70 comments.php:105
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:74 comments.php:109
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:80 comments.php:115
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:130
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:150
+msgid "Name"
+msgstr ""
+
+#: comments.php:153
+msgid "Email"
+msgstr ""
+
+#: comments.php:157
+msgid "Comment"
+msgstr ""
+
+#: comments.php:183
+msgid "Name is required"
+msgstr ""
+
+#: comments.php:190
+msgid "Email is required"
+msgstr ""
+
+#: comments.php:197
+msgid "Comment is required"
+msgstr ""
+
+#: footer.php:27
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: footer.php:27
+msgid "https://leetoo.net/"
+msgstr ""
+
+#: header-comics.php:25 header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: index.php:70
+msgid "Latest Posts"
+msgstr ""
+
+#: index.php:103 taxonomy-comic_characters.php:70
+#: taxonomy-comic_locations.php:70 taxonomy-comic_tags.php:69
+#: page-templates/comic-chapters.php:131
+#: page-templates/comic-characters.php:122
+#: page-templates/comic-collections.php:135
+#: template-parts/content-multiplecollections.php:171
+#: template-parts/content-singlecollection.php:130
+msgid "<i class='fas fa-chevron-left'></i>"
+msgstr ""
+
+#: index.php:104 taxonomy-comic_characters.php:71
+#: taxonomy-comic_locations.php:71 taxonomy-comic_tags.php:70
+#: page-templates/comic-chapters.php:132
+#: page-templates/comic-characters.php:123
+#: page-templates/comic-collections.php:136
+#: template-parts/content-multiplecollections.php:172
+#: template-parts/content-singlecollection.php:131
+msgid "<i class='fas fa-chevron-right'></i>"
+msgstr ""
+
+#: search.php:25
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:2 searchform.php:4
+msgid "Search"
+msgstr ""
+
+#: single-comic.php:26
+msgid "Published On:"
+msgstr ""
+
+#: inc/bootstrap-comment-walker.php:48
+msgid "Edit"
+msgstr ""
+
+#: inc/bootstrap-comment-walker.php:63
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:344
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:351
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:358
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:365
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:372
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:391
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:392
+#: inc/class-tgm-plugin-activation.php:835
+#: inc/class-tgm-plugin-activation.php:2544
+#: inc/class-tgm-plugin-activation.php:3592
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:393
+#: inc/class-tgm-plugin-activation.php:3171
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:394
+#: inc/class-tgm-plugin-activation.php:2963
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:396
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:398
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:400
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:401
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:402
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:403
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:528
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:529
+msgid "Update Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:942
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:942
+#: inc/class-tgm-plugin-activation.php:945
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:945
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1129
+#: inc/class-tgm-plugin-activation.php:2959
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1992
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2284
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2287
+msgid "Recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2303
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2306
+msgid "External Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2309
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2326
+msgid "Not Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2330
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2332
+msgid "Active"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2338
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2341
+msgid "Requires Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2344
+msgid "Update recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2353
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2399
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2403
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2407
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2411
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2493
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2501
+msgid "Installed version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2509
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2521
+msgid "Available version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2544
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2558
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2559
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2560
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2564
+msgid "Version"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2565
+msgid "Status"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2619
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2625
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2695
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2728
+msgid "Install"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2734
+msgid "Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2737
+msgid "Activate"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2768
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2770
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2811
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2813
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2919
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2945
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3170
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3510
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3513
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3515
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3519
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3521
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3521
+#: inc/class-tgm-plugin-activation.php:3529
+msgid "Show Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3521
+#: inc/class-tgm-plugin-activation.php:3529
+msgid "Hide Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3522
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3524
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3527
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3529
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3530
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3532
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/customizer.php:27
+msgid "Home Page Layout"
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "Home Layout"
+msgstr ""
+
+#: inc/customizer.php:43
+msgid "Choose a layout for the home page."
+msgstr ""
+
+#: inc/customizer.php:48
+msgid ""
+"Webtoon layout. Comic listing, chapters, collections, blog posts and sidebar."
+msgstr ""
+
+#: inc/customizer.php:52
+msgid ""
+"Traditional layout. Show latest comic with latest blog posts and sidebar."
+msgstr ""
+
+#: inc/customizer.php:56
+msgid "Minimalist layout. Only show the comic on home page. Nothing else."
+msgstr ""
+
+#: inc/customizer.php:60
+msgid ""
+"Collections layout. All collections in hero section, latest blog posts and "
+"sidebar."
+msgstr ""
+
+#: inc/customizer.php:65
+msgid ""
+"Hero layout. Hero section at the top of the page, menubar below it, latest "
+"comic, with latest blog posts and sidebar."
+msgstr ""
+
+#: inc/customizer.php:70
+msgid ""
+"Hero layout. Hero section at the top of the page, menubar below it, Comic "
+"listing, chapters, collections, blog posts and sidebar."
+msgstr ""
+
+#: inc/customizer.php:82
+msgid "Comic Page Layout"
+msgstr ""
+
+#: inc/customizer.php:98
+msgid "Comic Layout"
+msgstr ""
+
+#: inc/customizer.php:99
+msgid "Choose a layout for the comic page on desktops and large devices."
+msgstr ""
+
+#: inc/customizer.php:104
+msgid "One comic panel per row"
+msgstr ""
+
+#: inc/customizer.php:108 inc/customizer.php:112
+msgid "Two comic panels per row"
+msgstr ""
+
+#: inc/customizer.php:116
+msgid "Four comic panels per row"
+msgstr ""
+
+#: inc/customizer.php:178
+msgid "Navbar Background Color"
+msgstr ""
+
+#: inc/customizer.php:179
+msgid "Applied to the navbar menu background."
+msgstr ""
+
+#: inc/customizer.php:188
+msgid "Base Color Scheme"
+msgstr ""
+
+#: inc/customizer.php:211
+msgid "Header and Sidebar Background Color"
+msgstr ""
+
+#: inc/customizer.php:212
+msgid "Applied to the header and sidebar background."
+msgstr ""
+
+#: inc/customizer.php:233
+msgid "Header/Sidebar Text Color."
+msgstr ""
+
+#: inc/customizer.php:234
+msgid "Applied to the header and sidebar text."
+msgstr ""
+
+#: inc/customizer.php:255
+msgid "Main Content Background Color"
+msgstr ""
+
+#: inc/customizer.php:256
+msgid "Applied to main content background."
+msgstr ""
+
+#: inc/customizer.php:277
+msgid "Complementary Text Color"
+msgstr ""
+
+#: inc/customizer.php:278
+msgid "Applied to buttons, sidebar headers, pagination, labels and tag cloud."
+msgstr ""
+
+#: inc/customizer.php:299
+msgid "Main Content Text Color"
+msgstr ""
+
+#: inc/customizer.php:300
+msgid "Applied to the body."
+msgstr ""
+
+#: inc/customizer.php:321
+msgid "Complementary Color"
+msgstr ""
+
+#: inc/customizer.php:322
+msgid "Applied to the navbar, links, and input."
+msgstr ""
+
+#: inc/customizer.php:343
+msgid "Sidebar Link & Active Pagination Background Color"
+msgstr ""
+
+#: inc/customizer.php:344
+msgid ""
+"Applied to the links in the sidebar and the background on an active "
+"pagination link."
+msgstr ""
+
+#: inc/customizer.php:365
+msgid "Active Page Link Text Color"
+msgstr ""
+
+#: inc/customizer.php:366
+msgid "Applied to the active link in the pagination below the comic archive."
+msgstr ""
+
+#: inc/customizer.php:387
+msgid "Comic Navbar Text Color"
+msgstr ""
+
+#: inc/customizer.php:388
+msgid "Applied to the comic post navbar links(both header and footer)."
+msgstr ""
+
+#: inc/customizer.php:409
+msgid "Main Content Link Color"
+msgstr ""
+
+#: inc/customizer.php:410
+msgid "Applied to the links in the main content area."
+msgstr ""
+
+#: inc/customizer.php:431
+msgid "Navbar Link Color"
+msgstr ""
+
+#: inc/customizer.php:432
+msgid "Applied to the links in the navbar area."
+msgstr ""
+
+#: inc/customizer.php:453
+msgid "Navbar Link Hover Color"
+msgstr ""
+
+#: inc/customizer.php:454
+msgid "Applied to the links, on hover, in the navbar area."
+msgstr ""
+
+#: inc/customizer.php:474
+msgid "Footer Background Color"
+msgstr ""
+
+#: inc/customizer.php:475
+msgid "Applied to the background of the footer area."
+msgstr ""
+
+#: inc/customizer.php:496
+msgid "Footer Text Color"
+msgstr ""
+
+#: inc/customizer.php:497
+msgid "Applied to the text in the footer area."
+msgstr ""
+
+#: inc/customizer.php:518
+msgid "Footer Link Color"
+msgstr ""
+
+#: inc/customizer.php:519
+msgid "Applied to the links in the footer area."
+msgstr ""
+
+#: inc/customizer.php:529
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php:537
+msgid "(c) Toocheke"
+msgstr ""
+
+#: inc/customizer.php:548
+msgid "Footer Text"
+msgstr ""
+
+#: inc/customizer.php:563
+msgid "Applied to the header hero section of the page."
+msgstr ""
+
+#: inc/customizer.php:653
+msgid "Default"
+msgstr ""
+
+#: inc/customizer.php:675
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer.php:697
+msgid "Gray"
+msgstr ""
+
+#: inc/customizer.php:719
+msgid "Orange"
+msgstr ""
+
+#: inc/customizer.php:741
+msgid "Yellow"
+msgstr ""
+
+#: inc/customizer.php:763
+msgid "Light Green"
+msgstr ""
+
+#: inc/customizer.php:785
+msgid "Green"
+msgstr ""
+
+#: inc/customizer.php:807
+msgid "Light Blue"
+msgstr ""
+
+#: inc/customizer.php:829
+msgid "Blue"
+msgstr ""
+
+#: inc/customizer.php:851
+msgid "Red"
+msgstr ""
+
+#: inc/customizer.php:873
+msgid "Pink"
+msgstr ""
+
+#: inc/customizer.php:895
+msgid "Purple"
+msgstr ""
+
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:45
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:62
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:65
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:69
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:72
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:82
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:99 template-parts/content-page.php:37
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/toocheke-functions.php:72
+msgid "Primary"
+msgstr ""
+
+#: inc/widgets.php:11
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/widgets.php:13
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/widgets.php:41
+msgid ""
+"Creates an about section consisting of a title, image/avatar, and a "
+"description. Ideal for the right sidebar on the Toocheke WP theme."
+msgstr ""
+
+#: inc/widgets.php:116 inc/widgets.php:334 inc/widgets.php:487
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets.php:121
+msgid "Description:"
+msgstr ""
+
+#: inc/widgets.php:127
+msgid "Image:"
+msgstr ""
+
+#: inc/widgets.php:157
+msgid ""
+"Add links to your social media profiles. Ideally for the right sidebar on "
+"the Toocheke WP theme. "
+msgstr ""
+
+#: inc/widgets.php:339
+msgid "Patreon URL:"
+msgstr ""
+
+#: inc/widgets.php:344
+msgid "LINE Webtoon URL:"
+msgstr ""
+
+#: inc/widgets.php:348
+msgid "Intagram URL:"
+msgstr ""
+
+#: inc/widgets.php:352
+msgid "Twitter URL:"
+msgstr ""
+
+#: inc/widgets.php:356
+msgid "Facebook URL:"
+msgstr ""
+
+#: inc/widgets.php:360
+msgid "DeviantArt URL:"
+msgstr ""
+
+#: inc/widgets.php:364
+msgid "Email URL:"
+msgstr ""
+
+#: inc/widgets.php:368
+msgid "Reddit URL:"
+msgstr ""
+
+#: inc/widgets.php:372
+msgid "LinkedIn URL:"
+msgstr ""
+
+#: inc/widgets.php:376
+msgid "Tumblr URL:"
+msgstr ""
+
+#: inc/widgets.php:380
+msgid "Ko-fi URL:"
+msgstr ""
+
+#: inc/widgets.php:384
+msgid "Vimeo URL:"
+msgstr ""
+
+#: inc/widgets.php:388
+msgid "Youtube URL:"
+msgstr ""
+
+#: inc/widgets.php:392
+msgid "Twitch URL:"
+msgstr ""
+
+#: inc/widgets.php:396
+msgid "Comics RSS URL(e.g. https://www.yourdomain.com/comic/feed):"
+msgstr ""
+
+#: inc/widgets.php:432
+msgid "A calendar of your comics."
+msgstr ""
+
+#: inc/widgets.php:433
+msgid "Toocheke Calendar"
+msgstr ""
+
+#: inc/widgets.php:438
+msgid "Calendar"
+msgstr ""
+
+#: inc/widgets.php:558
+#, php-format
+msgctxt "calendar caption"
+msgid "%1$s %2$s"
+msgstr ""
+
+#: inc/widgets.php:649
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/widgets.php:651
+#, php-format
+msgid "Posts published on %s"
+msgstr ""
+
+#: inc/wp-bootstrap-navwalker.php:366
+msgid "Add a menu"
+msgstr ""
+
+#: page-templates/comic-chapters.php:24
+msgid "Chapters"
+msgstr ""
+
+#: page-templates/comic-characters.php:24
+msgid "Characters"
+msgstr ""
+
+#: template-parts/content-multiplecollections.php:139
+#: template-parts/content-singlecollection.php:98
+msgid "Latest Comics"
+msgstr ""
+
+#: template-parts/content-multiplecollections.php:234
+#: template-parts/content-singlecollection.php:194
+msgid "Latest Chapters"
+msgstr ""
+
+#: template-parts/content-multiplecollections.php:281
+#: template-parts/content-singlecollection.php:241
+msgid "More Chapters"
+msgstr ""
+
+#: template-parts/content-multiplecollections.php:312
+msgid "Latest Collections"
+msgstr ""
+
+#: template-parts/content-multiplecollections.php:359
+msgid "More Collections"
+msgstr ""
+
+#: template-parts/content-nav.php:14
+msgid "Primary Menu"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:23
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:36
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:43
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:24 template-parts/content.php:50
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:39
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
